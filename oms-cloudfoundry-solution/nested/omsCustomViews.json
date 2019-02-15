@@ -264,7 +264,7 @@
                 ]
             },
             "plan": {
-                "name": "[concat('cloudfoundrysolution', '[' ,parameters('omsWorkspaceName'), ']')]",
+                "name": "[concat(parameters('omsWorkspaceName'), '[CloudFoundry]')]",
                 "product": "cloudfoundrysolution",
                 "promotionCode": "",
                 "publisher": "Microsoft",
@@ -290,7 +290,7 @@
                 ]
             },
             "plan": {
-                "name": "[concat('omsagentsolution', '[' ,parameters('omsWorkspaceName'), ']')]",
+                "name": "[concat(parameters('omsWorkspaceName'), '[OMSAgentBOSHRelease]')]",
                 "product": "OMS Agent BOSH Release Solution",
                 "promotionCode": "",
                 "publisher": "Microsoft",
@@ -316,7 +316,7 @@
                 ]
             },
             "plan": {
-                "name": "[concat('boshhmforwarder', '[' ,parameters('omsWorkspaceName'), ']')]",
+                "name": "[concat(parameters('omsWorkspaceName'), '[BOSHHealthMetricsForwarder]')]",
                 "product": "BOSH HM Forwarder Solution",
                 "promotionCode": "",
                 "publisher": "Microsoft",
